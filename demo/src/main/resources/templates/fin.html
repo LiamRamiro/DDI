@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thyneleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+<body>
+<table border="1px" style="display: table; margin:auto; margin-top:200px; width: 50%;border-collapse: collapse;">
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>DNI</th>
+    <th colspan="2">Acciones</th>
+    <tbody>
+    <tr th:each="dun: ${duenos}">
+        <td th:text="${dun.id}"/>
+        <td th:text="${dun.nombre}"/>
+        <td th:text="${dun.dni}"/>
+        <td><a th:href="@{'/updateDueno/'+${dun.id}}">Update</a></td>
+        <td><a th:href="@{'/deleteDueno/'+${dun.id}}">Delete</a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

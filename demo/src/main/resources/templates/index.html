@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thyneleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+</head>
+<body>
+	<div style="display: table; margin:auto; margin-top:200px; border: solid 1px black; width: 50%;">
+		<form th:action="@{/searchDueno}">
+			<span>Buscar por Nombre o Apellido:</span>
+			<input type="text" th:name="search"/>
+		</form>
+		<br>
+		<br>
+		<!-- esto se enviara a localhost:8081/insertStudent -->
+		<span>Insertar o Actualizar estudiante:</span>
+		<br>
+		<form th:action="@{/insertDueno}" th:object="${dueno}">
+			<input type="number" th:field="*{id}" hidden/>
+			<span>Nombre:</span>
+			<input type="text" th:field="*{nombre}"/>
+			<span>Dni:</span>
+			<input type="text" th:field="*{dni}"/>
+			<input type="submit" value="Enviar datos"/>
+		</form>
+	</div>
+	<br/>
+	<br/>
+
+	<div style="display: table; margin:auto; margin-top:200px; border: solid 1px black; width: 50%;">
+		<form th:action="@{/searchMascota}">
+			<span>Buscar por Nombre :</span>
+			<input type="text" th:name="search"/>
+		</form>
+		<br>
+		<br>
+		<!-- esto se enviara a localhost:8081/insertStudent -->
+		<span>Insertar o Actualizar mascota:</span>
+		<br>
+		<form th:action="@{/insertMascota}" th:object="${mascota}">
+			<input type="number" th:field="*{id}" hidden/>
+			<span>Nombre:</span>
+			<input type="text" th:field="*{nombre}"/>
+			<span>Num_chip:</span>
+			<input type="number" th:field="*{num_chip}"/>
+			<span>Vacunado:</span>
+			<input type="checkbox" th:field="*{vacunado}"/>
+			<input type="submit" value="Enviar datos"/>
+		</form>
+	</div>
+</body>
+</html>

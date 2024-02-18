@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario libro</title>
+</head>
+<body>
+<form th:action="@{/insertLibro}" th:object="${libro}" method="post">
+    <input type="hidden" th:field="*{id}" />
+
+    <h3>ISBN</h3>
+    <input type="text" th:field="*{isbn}"/>
+
+    <h3>Año</h3>
+    <input type="number" th:field="*{ano}" onchange="cambiarLista()"/>
+    <p>[Escribe un año para que se muestre la lista de almacenes correspondiente y pincha en la página]</p>
+
+    <h3>Almacen</h3>
+
+    <select th:field="*{almacen_old}" style="display: none;">
+        <option value="" selected>Seleccionar Almacen Old</option>
+        <option th:each="almacen : ${almacenesViejos}" th:value="${almacen.id}" th:text="${almacen.nombre}"></option>
+    </select>
+
+    <select th:field="*{almacen_new}" style="display: none;">
+        <option value="" selected>Seleccionar Almacen New</option>
+        <option th:each="almacen : ${almacenesNuevos}" th:value="${almacen.id}" th:text="${almacen.nombre}"></option>
+    </select>
+
+    <input type="submit" value="Enviar"/>
+</form>
+
+<script th:inline="javascript">
+    function cambiarLista() {
+        var ano = document.querySelector('[name="ano"]').value;
+        var almacenViejo = document.querySelector('[name="almacen_old"]');
+        var almacenNuevo = document.querySelector('[name="almacen_new"]');
+
+        if (ano < 2000) {
+            almacenViejo.style.display = 'block';
+            almacenNuevo.style.display = 'none';
+        } else {
+            almacenViejo.style.display = 'none';
+            almacenNuevo.style.display = 'block';
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fromulario Region</title>
+</head>
+<body>
+  <form th:action="@{/crearRegion}" th:object="${nuevaRegion}" method="post">
+    <input type="hidden" th:field="*{id}" />
+    <h3>Nombre</h3>
+    <input type="text" th:field="*{nombre}"/>
+    <br>
+    <input type="submit" value="Enviar"/>
+    <br>
+  </form>
+  <form th:action="@{/searchRegion}" method="post">
+    <h3>Buscar region por nombre</h3>
+    <input type="text" name="search"/>
+    <input type="submit" value="Buscar"/>
+  </form>
+
+</body>
+</html>

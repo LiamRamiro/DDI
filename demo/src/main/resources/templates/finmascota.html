@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thyneleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MASCOTA LIST</title>
+</head>
+<body>
+<table border="1px" style="display: table; margin:auto; margin-top:200px; width: 50%;border-collapse: collapse;">
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>NUM_CHIP</th>
+    <th>VACUNADO</th>
+    <th colspan="2">Acciones</th>
+    <tbody>
+    <tr th:each="mas: ${mascotas}">
+        <td th:text="${mas.id}"/>
+        <td th:text="${mas.nombre}"/>
+        <td th:text="${mas.num_chip}"/>
+        <td><input type="checkbox" th:checked="${mas.vacunado}" disabled="disabled"/></td>
+        <td><a th:href="@{'/updateMascota/'+${mas.id}}">Update</a></td>
+        <td><a th:href="@{'/deleteMascota/'+${mas.id}}">Delete</a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
