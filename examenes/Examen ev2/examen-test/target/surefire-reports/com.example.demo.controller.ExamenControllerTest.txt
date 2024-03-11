@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.controller.ExamenControllerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 1.544 s <<< FAILURE! -- in com.example.demo.controller.ExamenControllerTest
+com.example.demo.controller.ExamenControllerTest.testAgeOver67 -- Time elapsed: 1.429 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.example.demo.service.ExamenService.ageChecker(java.util.Date, java.util.Date)" because "this.examenService" is null
+	at com.example.demo.controller.ExamenControllerTest.testAgeOver67(ExamenControllerTest.java:94)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.demo.controller.ExamenControllerTest.testAgeNotBorn -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.example.demo.service.ExamenService.ageChecker(java.util.Date, java.util.Date)" because "this.examenService" is null
+	at com.example.demo.controller.ExamenControllerTest.testAgeNotBorn(ExamenControllerTest.java:59)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.demo.controller.ExamenControllerTest.testAgeBetween18And67 -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.example.demo.service.ExamenService.ageChecker(java.util.Date, java.util.Date)" because "this.examenService" is null
+	at com.example.demo.controller.ExamenControllerTest.testAgeBetween18And67(ExamenControllerTest.java:82)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.demo.controller.ExamenControllerTest.testAgeUnder18 -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.example.demo.service.ExamenService.ageChecker(java.util.Date, java.util.Date)" because "this.examenService" is null
+	at com.example.demo.controller.ExamenControllerTest.testAgeUnder18(ExamenControllerTest.java:71)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

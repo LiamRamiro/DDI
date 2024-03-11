@@ -1,0 +1,258 @@
+{
+  "id": "9d847424-40a6-48df-926b-deaa0da52419",
+  "version": "2.0",
+  "name": "examen",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "e53de2fa-3197-4c8b-afad-eedbad72595a",
+    "name": "Untitled",
+    "commands": [{
+      "id": "3ac24a2f-d15a-4e4d-82e3-8d9d7c1a45cc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7eec24cd-3bdf-4b79-ac50-2d6e4ea628d0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "803684b4-d9e8-4da3-ba91-40e0d9bd8282",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Age checker",
+      "targets": [
+        ["linkText=Age checker", "linkText"],
+        ["css=a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Age checker')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/navigate?to=ageChecker')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Age checker')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9bd2340-1d17-44af-aecb-38ae1c6ad6bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=fechaNacimiento",
+      "targets": [
+        ["id=fechaNacimiento", "id"],
+        ["name=fechaNacimiento", "name"],
+        ["css=#fechaNacimiento", "css:finder"],
+        ["xpath=//input[@id='fechaNacimiento']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04b2fb89-5002-4048-ad46-bd1d39ecd60b",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechaNacimiento",
+      "targets": [
+        ["id=fechaNacimiento", "id"],
+        ["name=fechaNacimiento", "name"],
+        ["css=#fechaNacimiento", "css:finder"],
+        ["xpath=//input[@id='fechaNacimiento']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2003-12-04"
+    }, {
+      "id": "69f9c3ef-bd8e-42b9-a0e5-5699954d6a77",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0aa88033-3588-4cc5-aaa3-ea6fc282055f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Division checker",
+      "targets": [
+        ["linkText=Division checker", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Division checker')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/navigate?to=divisionChecker')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Division checker')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b8bd60b-c3fc-45f2-ac36-76ceca7c0472",
+      "comment": "",
+      "command": "click",
+      "target": "id=dividendo",
+      "targets": [
+        ["id=dividendo", "id"],
+        ["name=dividendo", "name"],
+        ["css=#dividendo", "css:finder"],
+        ["xpath=//input[@id='dividendo']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b23ff7f1-4834-4c95-b923-af4d087348c2",
+      "comment": "",
+      "command": "type",
+      "target": "id=dividendo",
+      "targets": [
+        ["id=dividendo", "id"],
+        ["name=dividendo", "name"],
+        ["css=#dividendo", "css:finder"],
+        ["xpath=//input[@id='dividendo']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "33"
+    }, {
+      "id": "4dfec06b-a340-447a-a3e4-57357d78d563",
+      "comment": "",
+      "command": "click",
+      "target": "id=divisor",
+      "targets": [
+        ["id=divisor", "id"],
+        ["name=divisor", "name"],
+        ["css=#divisor", "css:finder"],
+        ["xpath=//input[@id='divisor']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e08ab09-66d9-4c5c-aa14-b94fbe1a6a62",
+      "comment": "",
+      "command": "type",
+      "target": "id=divisor",
+      "targets": [
+        ["id=divisor", "id"],
+        ["name=divisor", "name"],
+        ["css=#divisor", "css:finder"],
+        ["xpath=//input[@id='divisor']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "331f3a10-5aa5-456f-b165-df4ac0c46a0f",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(5)",
+      "targets": [
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4c57828a-e93e-4523-810e-b505e1b9b331",
+    "name": "examenDivision",
+    "commands": [{
+      "id": "334d7834-175e-4f44-8f4c-f617c08eade1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38931cfc-8563-4ba3-9c70-1127da24ac68",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a3d2e51-0cd8-42cb-9301-7bfd1906c45e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Division checker",
+      "targets": [
+        ["linkText=Division checker", "linkText"],
+        ["css=a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Division checker')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/navigate?to=divisionChecker')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Division checker')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bff4115b-f264-4d05-86e5-987254efff2b",
+      "comment": "",
+      "command": "click",
+      "target": "id=dividendo",
+      "targets": [
+        ["id=dividendo", "id"],
+        ["name=dividendo", "name"],
+        ["css=#dividendo", "css:finder"],
+        ["xpath=//input[@id='dividendo']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be666a6e-661f-4e6e-89b1-9508b7f7fab9",
+      "comment": "",
+      "command": "type",
+      "target": "id=dividendo",
+      "targets": [
+        ["id=dividendo", "id"],
+        ["name=dividendo", "name"],
+        ["css=#dividendo", "css:finder"],
+        ["xpath=//input[@id='dividendo']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "33"
+    }, {
+      "id": "85b322bf-79c1-4631-a31e-e4fa7de0654c",
+      "comment": "",
+      "command": "click",
+      "target": "id=divisor",
+      "targets": [
+        ["id=divisor", "id"],
+        ["name=divisor", "name"],
+        ["css=#divisor", "css:finder"],
+        ["xpath=//input[@id='divisor']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ce2f0e0-ec02-4cf0-9cf7-7304c4213e68",
+      "comment": "",
+      "command": "type",
+      "target": "id=divisor",
+      "targets": [
+        ["id=divisor", "id"],
+        ["name=divisor", "name"],
+        ["css=#divisor", "css:finder"],
+        ["xpath=//input[@id='divisor']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "3edb7f3e-7caf-49b6-ab48-5d958a9cd767",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(5)",
+      "targets": [
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "68b5b7fa-5391-406b-bfba-519c83222f46",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e53de2fa-3197-4c8b-afad-eedbad72595a"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

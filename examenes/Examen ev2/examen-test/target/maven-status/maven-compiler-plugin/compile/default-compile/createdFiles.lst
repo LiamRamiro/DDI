@@ -1,0 +1,4 @@
+com\example\demo\controller\ExamenController.class
+com\example\demo\DemoApplication.class
+com\example\demo\model\Examen.class
+com\example\demo\service\ExamenService.class

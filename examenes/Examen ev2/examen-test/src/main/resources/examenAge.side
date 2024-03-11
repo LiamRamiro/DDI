@@ -1,0 +1,86 @@
+{
+  "id": "9d847424-40a6-48df-926b-deaa0da52419",
+  "version": "2.0",
+  "name": "examen",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "e53de2fa-3197-4c8b-afad-eedbad72595a",
+    "name": "Untitled",
+    "commands": [{
+      "id": "3ac24a2f-d15a-4e4d-82e3-8d9d7c1a45cc",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7eec24cd-3bdf-4b79-ac50-2d6e4ea628d0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "803684b4-d9e8-4da3-ba91-40e0d9bd8282",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Age checker",
+      "targets": [
+        ["linkText=Age checker", "linkText"],
+        ["css=a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Age checker')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/navigate?to=ageChecker')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Age checker')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9bd2340-1d17-44af-aecb-38ae1c6ad6bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=fechaNacimiento",
+      "targets": [
+        ["id=fechaNacimiento", "id"],
+        ["name=fechaNacimiento", "name"],
+        ["css=#fechaNacimiento", "css:finder"],
+        ["xpath=//input[@id='fechaNacimiento']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04b2fb89-5002-4048-ad46-bd1d39ecd60b",
+      "comment": "",
+      "command": "type",
+      "target": "id=fechaNacimiento",
+      "targets": [
+        ["id=fechaNacimiento", "id"],
+        ["name=fechaNacimiento", "name"],
+        ["css=#fechaNacimiento", "css:finder"],
+        ["xpath=//input[@id='fechaNacimiento']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2003-12-04"
+    }, {
+      "id": "69f9c3ef-bd8e-42b9-a0e5-5699954d6a77",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "68b5b7fa-5391-406b-bfba-519c83222f46",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e53de2fa-3197-4c8b-afad-eedbad72595a"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
